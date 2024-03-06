@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Forms</title>
+    <meta charset="utf-8">
+</head>
+<body style="text-align: center;">
+
+    <header>
+        <h1>Venta en Linea</h1>
+    </header>
+
+    <form action="/procesar_formulario.php" method="post" style="display: inline-block; text-align: left;">
+
+        <fieldset style="max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+
+            <legend style="font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">Informacion General</legend>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="25" placeholder="Nombre" title="Nombre">
+            <br>
+            <label for="paterno">Apellido Paterno</label>
+            <input type="text" name="paterno" id="paterno" maxlength="25" placeholder="Apellido Paterno" title="Apellido Paterno">
+            <br>
+            <label for="materno">Apellido Materno</label>
+            <input type="text" name="materno" id="materno" maxlength="25" placeholder="Apellido Materno" title="Apellido Materno">
+            <br>
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" name="usuario" id="usuario" maxlength="25" placeholder="Nombre de Usuario" title="Nombre de Usuario">
+            <br>
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass" maxlength="25" size="15" placeholder="Contraseña" title="Contraseña">
+            <br>
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" name="fecha">
+        </fieldset>
+
+        <fieldset style="max-width: 400px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+
+            <legend style="font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">Datos de Facturacion</legend>
+
+            <label for="pais">Pais</label>
+            <br>
+            <select multiple name="pais" id="pais" placeholder="Selecciona tu país">
+                <option>Mexico</option>
+                <option>Canada</option>
+                <option>E.U.A</option>
+                <option>España</option>
+                <option>Suiza</option>
+                <option>Japon</option>
+                <option>Rusia</option>
+            </select>
+            <br>
+            <label for="ciudad">Ciudad</label>
+            <br>
+            <select multiple name="ciudad" id="ciudad" placeholder="Selecciona tu ciudad">
+                <option>San Luis Potosi</option>
+                <option>Matehuala</option>
+                <option>Ciudad Valles</option>
+                <option>Ciudad de Mexico</option>
+            </select>
+            <br>
+            <label for="calle">Calle</label>
+            <input type="text" name="calle" id="calle" maxlength="25" placeholder="Nombre de tu calle" title="Calle">
+            <br>
+            <label for="casa">Numero de casa</label>
+            <input type="text" name="casa" id="casa" maxlength="25" placeholder="Número de casa" title="Casa">
+            <br>
+            <label for="colonia">Colonia</label>
+            <input type="text" name="colonia" id="colonia" maxlength="25" placeholder="Nombre de tu colonia" title="Colonia">
+            <br>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email" maxlength="50" placeholder="Tu dirección de correo electrónico" title="Correo Electrónico">
+            <br>
+            <label for="rfc">RFC</label>
+            <input type="text" name="rfc" id="rfc" maxlength="13" placeholder="Tu RFC" title="RFC">
+            <br>
+            <label for="cp">Código Postal</label>
+            <input type="text" name="cp" id="cp" maxlength="5" placeholder="Código Postal" title="Código Postal">
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+
+    </form>
+
+</body>
+</html>
