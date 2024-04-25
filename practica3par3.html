@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 3 Javascript</title>
+  <link rel="stylesheet" href="detallespra3.css">
+    <script src="funpra3.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Funciones Reservadas</h1>
+    <h2>Practica3</h2>
+    <form id="rfcForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required><br>
+
+      <label for="apellidoPaterno">Apellido Paterno:</label>
+      <input type="text" id="apellidoPaterno" required><br>
+
+      <label for="apellidoMaterno">Apellido Materno:</label>
+      <input type="text" id="apellidoMaterno" required><br>
+
+      <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+      <input type="number" id="dia" min="1" max="31" placeholder="Día" required>
+      <input type="number" id="mes" min="1" max="12" placeholder="Mes" required>
+      <input type="number" id="anio" min="1900" max="9999" placeholder="Año" required><br>
+
+      <button type="button" onclick="generarRFC()">Generar RFC</button>
+    </form>
+
+    <label for="resultado">RFC:</label>
+    <input type="text" id="resultado" readonly>
+  </div>
+
+
+</body>
+</html>
