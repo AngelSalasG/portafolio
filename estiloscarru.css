@@ -1,0 +1,45 @@
+/* Estilos generales del carrusel */
+.carousel {
+  position: relative;
+  max-width: 600px; /* Ancho máximo del carrusel */
+  margin: auto; /* Centrar el carrusel horizontalmente */
+  overflow: hidden; /* Ocultar contenido que exceda el ancho máximo */
+}
+
+/* Estilos para el contenido del carrusel */
+.carousel-content {
+  display: flex; /* Mostrar las imágenes en línea */
+}
+
+/* Estilos para las imágenes del carrusel */
+.carousel-content img {
+  width: 100%; /* Ajustar ancho al contenedor */
+  display: none; /* Ocultar todas las imágenes por defecto */
+}
+
+/* Estilo para mostrar la imagen activa */
+.carousel-content img.active {
+  display: block; /* Mostrar la imagen activa */
+}
+
+/* Estilos para los botones previo y siguiente */
+button {
+  position: absolute; /* Posición absoluta para estar sobre las imágenes */
+  top: 50%; /* Alinear verticalmente al centro */
+  transform: translateY(-50%); /* Ajustar verticalmente */
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  color: white; /* Texto en color blanco */
+  border: none; /* Sin bordes */
+  padding: 10px; /* Espaciado interno */
+  cursor: pointer; /* Cursor de tipo puntero */
+}
+
+/* Estilos para el botón previo */
+#prevBtn {
+  left: 0; /* Alinear a la izquierda del contenedor */
+}
+
+/* Estilos para el botón siguiente */
+#nextBtn {
+  right: 0; /* Alinear a la derecha del contenedor */
+}
