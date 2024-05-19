@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palíndromo</title>
+    <!-- Enlace al archivo CSS externo para aplicar estilos -->
+    <link rel="stylesheet" href="examen3.css">
+    <!-- Enlace al archivo JavaScript externo para la funcionalidad del palíndromo -->
+    <script src="examen3.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Palíndromos</h1>
+        <form id="palindromeForm">
+            <label for="phrase">Introduce una frase:</label>
+            <!-- Campo de texto para que el usuario introduzca una frase -->
+            <input type="text" id="phrase" name="phrase" required>
+            <!-- Botón para verificar si la frase es un palíndromo -->
+            <button type="button" onclick="checkPalindrome()">Verificar</button>
+        </form>
+        <!-- Párrafo donde se mostrará el resultado de la verificación -->
+        <p id="result"></p>
+    </div>
+</body>
+</html>

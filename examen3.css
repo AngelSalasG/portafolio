@@ -1,0 +1,67 @@
+/* Estilos básicos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente para todo el documento */
+    background-color: #f0f0f0; /* Color de fondo claro */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 50px auto; /* Centra el contenedor horizontalmente y le da un margen superior e inferior de 50px */
+    padding: 20px; /* Padding interno de 20px */
+    background-color: #fff; /* Color de fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para el encabezado */
+h1 {
+    text-align: center; /* Centra el texto del encabezado */
+    color: #333; /* Color de texto */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex; /* Utiliza flexbox para el layout */
+    flex-direction: column; /* Coloca los elementos del formulario en una columna */
+}
+
+/* Estilos para las etiquetas del formulario */
+label {
+    margin-bottom: 10px; /* Margen inferior de 10px */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para el campo de texto */
+input[type="text"] {
+    padding: 10px; /* Padding interno de 10px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+    border: 1px solid #ccc; /* Borde de 1px de color gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px; /* Padding interno de 10px */
+    background-color: #007BFF; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo cuando el ratón pasa sobre el botón */
+}
+
+/* Estilos para el párrafo de resultado */
+#result {
+    margin-top: 20px; /* Margen superior de 20px */
+    font-size: 18px; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    text-align: center; /* Centra el texto */
+}
