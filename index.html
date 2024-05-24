@@ -1,120 +1,254 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-	  <title>Programación Web I Green Tech</title>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="estilo/bootstrap.min.css">
-	  <link rel="stylesheet" href="estilo/sitio.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <script type="text/javascript">
- var vsid = "si271272760234a";
- (function() { 
- var vsjs = document.createElement('script'); vsjs.type = 'text/javascript'; vsjs.async = true; vsjs.setAttribute('defer', 'defer');
-  vsjs.src = 'https://www.virtualspirits.com/vsa/chat.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(vsjs, s);
- })();
-</script>
-	</head>
-	<body>
-		  <header>
-        <h1>Green Tech</h1>
-        <p>Tu fuente de información sobre tecnología verde</p>
-        <p>
-            Nombres de los integrantes: Jonathan Bautista Hernandez 182910 <br/>Salas Guerrero Luis Angel 185545<br/>
-        </p>
-    </header>	
-		<script src="script/funciones.js"></script>
-		<!-- inicia barra de navegacion -->
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>                        
-			  </button>
-			  <a class="navbar-brand" href="index.html">Green Tech</a>
-			</div>
-			<!--Finaliza el menu colapsable-->
-			<!--Inician las opciones de menú-->
-			<div class="collapse navbar-collapse" id="myNavbar">
-			  <ul class="nav navbar-nav">
-				<!-- 1er elemento del menú -->
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Inicio<span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-					<li><a href="#" id="pag_1" onclick="cargaPractica('SobreNosotros.html');return false;">Sobre Nosotros</a></li>
-					
-				  </ul>
-				</li>
-				<!-- 2er elemento del menú -->
-				<li class="dropdown">	
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Informacion<span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-					<li><a href="#" id="pag_7" onclick="cargaPractica('Informacion.html');return false;">Informacion Inicial</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('Impacto.html');return false;">Impacto</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('Situacion_Actual.html');return false;">Situacion Actual</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('Vision_Futuro.html');return false;">Vision a Futuro</a></li>
-					<li class="divider"></li>
-					
-				  </ul>
-				</li>
-				<!-- 3er elemento del menú -->
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Videos y Galeria<span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-					<li class="divider"></li>
-					<li><a href="#" id="pag_8" onclick="cargaPractica('Videos.html');return false;">Videos de Green Tech</a></li>
-					<li><a href="#" id="pag_9" onclick="cargaPractica('Galeria.html');return false;">Galeria de Memes de Green Tech</a></li>
-					<li class="divider"></li>
-				  </ul>
-				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Interaccion<span class="caret"></span></a>
-				  <ul class="dropdown-menu" role="menu">
-					<li><a href="#" id="pag_7" onclick="cargaPractica('blog.html');return false;">Blog</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('enviar.html');return false;">Contacto</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('Formulario.html');return false;">Cuestionario</a></li>
-					<li class="divider"></li>
-					
-				  </ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ayuda<span class="caret"></span></a>
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="#" id="pag_7" onclick="cargaPractica('Preguntas_Frecuentes.html');return false;">Preguntas Frecuentes</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('grupo.html');return false;">Grupo de ayudas</a></li>
-					<li><a href="#" id="pag_7" onclick="cargaPractica('redes.html');return false;">Redes sociales</a></li>
-					<li class="divider"></li>
-					
-				  </ul>
-				</li>
-			  </ul>
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Ene - Jun 24</a></li>
-			  </ul>
-			</div>
-		  </div>
-		</nav>
-		
-		<div class="container-fluid text-center">    
-		  <div class="row content">
-			<div class="col-sm-2 sidenav">
-			</div>
-			<div class="col-sm-8 text-left" id="content" style="height: 800px"> 
-				<!-- Contenido -->
-				<img src="GreenTech/logo1.png" width="900px" class="img-responsive center-block" alt="Imagen centrada">
+<html>
+<head>
+    <title>Portafolio de evidencias</title>
+    <meta charset="utf-8"/> 
+    <meta name="autor" content="UPSLP">
+    <meta http-equiv="refresh" content="60">
+    <link rel="logo" type="image/png" href="imagenes/logo.png">
+    <script type="text/javascript">
+        (function (w, d) {
+            w.amo_pixel_token = 'p1Ip4iB8yqaEyXU9HPmcTMAN9Ta9Dje5MiZ0vBvFI+PN0sZCSFQLiJElh4v1yP2Sc7WkcSRhdOBaBgUbXtPJtg==';
+            var s = document.createElement('script'), f = d.getElementsByTagName('script')[0];
+            s.id = 'amo_pixel_js';
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = 'https://piper.amocrm.com/pixel/js/tracker/pixel.js?token=' + w.amo_pixel_token;
+            f.parentNode.insertBefore(s, f);
+        })(window, document);
+    </script>
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-			</div>
-			<div class="col-sm-2 sidenav">
-			</div>
-		  </div>
-		</div>
-		<footer class="container-fluid text-center">
-		  <p>&copy; 2024 Green Tech. Universidad de San Luis Potosi</p>
-		  <p>iNGENUIERIA EN TECNOLOGIAS DE LA INFORMACION</p>
-		</footer>
-	</body>
+        #contiene {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-family: 'Charmonman', cursive;
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        p, li {
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        hr {
+            margin: 20px auto;
+            border: 0;
+            border-top: 3px solid #2980b9;
+            width: 65%;
+        }
+
+        nav ul, nav ol {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        nav ul li, nav ol li {
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #d5d8dc;
+        }
+
+        article, section {
+            margin: 20px 0;
+        }
+
+        section h1, section h2 {
+            color: #2980b9;
+        }
+
+        section p {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-left: 5px solid #2980b9;
+        }
+
+        nav h1, nav h2 {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav ul, nav ol {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav li {
+            padding: 5px 0;
+        }
+
+        nav li a {
+            color: #2980b9;
+        }
+
+        /* Additional Styles for the Navigation List */
+        .nav-section {
+            background-color: #d5e6f3;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .nav-section h1, .nav-section h2 {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .nav-section ul, .nav-section ol {
+            padding-left: 20px;
+        }
+
+        .nav-section ul li, .nav-section ol li {
+            margin-bottom: 5px;
+        }
+
+        .nav-section a {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .nav-section a:hover {
+            background-color: #34495e;
+        }
+
+        .nested-list {
+            margin-left: 20px;
+        }
+
+        .nested-list ol {
+            list-style-type: lower-alpha;
+        }
+
+        .nested-list ol li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contiene">
+        <h1>Portafolio de evidencias</h1>
+        <h1>Programación web I</h1>
+        <h1>Ingeniería en Tecnologías de la Información</h1>
+        <h1>Primavera 2024</h1>
+        <hr />
+        <h1>Alumno: Salas Guerrero Luis Angel</h1>
+        <h1>Profesora: MC Imelda Deyanira Hernández Martínez</h1>
+        <hr />
+        <h1>Sobre el alumno</h1>
+        <article>
+            <section>
+                <h2>Autobiografía</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+        </article>
+        <section>
+            <h1>Misión de la Carrera</h1>
+            <p>El Programa Educativo de la carrera de <b>Ingeniería en Tecnologías de la Información</b> está comprometido con la excelencia en la formación integral y humana, y con el aprendizaje, el desarrollo y aplicación del conocimiento en los campos de desarrollo e implementación de software, ofreciendo una solución integral a los problemas asociados con el <u>área computacional.</u></p>
+            <p>Está comprometido con la sociedad para mantener una oferta educativa pertinente en el área y desarrollar investigación aplicada involucrando alumnos en la solución de problemas de la sociedad.</p>
+            <nav class="nav-section">
+                <h1>Visión de la Carrera</h1>
+            <ul>
+                    <li>La UPSLP y su programa educativo de Ingeniería en Tecnologías de la Información entregan a la sociedad alumnos formados con los más altos estándares profesionales.</li>
+                    <li>Egresados que tienen en su haber las competencias pertinentes a las necesidades de su entorno, y son reconocidos en el ámbito laboral por su alto desempeño y calidad personal; un buen porcentaje de ellos realiza estudios de postgrado en el país o en el extranjero.</li>
+                    <li>Además, cuentan con varias certificaciones de importancia en el área, actuales y con reconocimiento internacional. Con un nivel de inglés muy aceptable certificado por el British Council.</li>
+                    <li>Con experiencia práctica adquirida en los laboratorios, en el estudio de casos y en su estancia profesional y, con las habilidades de manejo de las nuevas tecnologías y la capacidad de reconocer el proceso de aprendizaje como una necesidad permanente.</li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <nav class="nav-section">
+                <h2>Contenidos del Curso</h2>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Parcial 1</li>
+                    <ol class="nested-list">
+                        <li><a href="practica1.html">Practica 1 Tablas</a></li>
+                        <li><a href="practica2.html">Practica 2 Iframe</a></li>
+                        <li><a href="">Practica 3</a></li>
+                        <li><a href="costco.html">Examen Practico</a></li>
+                    </ol>
+                    <li>Parcial 2</li>
+                    <ol class="nested-list">
+                        <li><a href="forms.html">Practica 1 Forms</a></li>
+                        <li><a href="Practica2.html">Practica 2 Estilos</a></li>
+                        <li><a href="examenpra2.html">Examen Practico 2</a></li>
+                    </ol>
+                    <li>Parcial 3</li>
+                    <ol class="nested-list">
+                        <li><a href="practica1pa3.html">Practica 1 Uso de prompt</a></li>
+                        <li><a href="practica2port.html">Practica 2 Funciones de cadena</a></li>
+                        <li><a href="practica3par3.html">Practica 3 Javascript</a></li>
+                        <li><a href="ObtenerTotales.html">Practica 4 pdf</a></li>
+                        <li><a href="storage3.html">Practica 5</a></li>
+                        <li><a href="carrousel.html">Practica 6 Carrousel</a></li>
+                        <li><a href="examen3.html">Examen Practico</a></li>
+                    </ol>
+                    <li>Proyecto Final</li>
+                    <ol class="nested-list">
+                        <li><a href="Avance del PROYECTO.docx">Planeacion Proyecto</a></li>
+                        <li><a href="Green_Tech.html">Avance Proyecto</a></li>
+                        <li><a href="Index.html">Proyecto avances finales</a></li>
+                    </ol>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
 </html>
